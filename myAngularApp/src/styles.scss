@@ -1,0 +1,20 @@
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+$primary-color: #3498db;
+$secondary-color: #abadb7;
+ 
+$primary-text-color: #1b2a35;
+$secondary-text-color: #abadb7;
+$backgroundColor: #d8d8db;
+.textDark{
+   color: $primary-text-color; 
+}
+
+.textLight{
+    color: $secondary-text-color;
+}
+
+.bgGrey{
+    background-color: $backgroundColor;
+}
