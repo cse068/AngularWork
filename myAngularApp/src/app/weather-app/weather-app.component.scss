@@ -1,0 +1,233 @@
+.main_container {
+    max-width: 1000px;
+    display: flex;
+    margin: 40px auto;
+    /* font-family: 'Syne'; */
+    width: 100%;
+  }
+  
+  .left-panel {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+    width: 30%;
+  }
+  
+  .input_div {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    font-size: 12px;
+  }
+  
+  .city-input {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    outline: none;
+  }
+  
+  .line {
+    height: 0.5px;
+    width: 100%;
+    margin: 10px auto;
+    background-color: black;
+  }
+  
+  .add-button {
+    font-size: 30px;
+    margin: 0px 10px;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Below left  */
+  .left_below {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .left_below>h3 {
+    font-size: 12px;
+    color: grey;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid grey;
+  }
+  
+  .left_below>ul>li {
+    text-transform: capitalize;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 8px;
+    margin: 4px auto;
+    align-items: center;
+  }
+  
+  .left_below>ul>li>span {
+    font-size: 12px;
+  }
+  
+  .btn {
+    display: flex;
+  }
+  
+  .btn>button {
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .btn>button>svg {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .clear {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    padding: 8px 13px;
+  }
+  
+  /* Add this to your styles.css or weather.component.css file */
+  .right {
+    min-height: 400px;
+    margin-left: 10px;
+    border: 1px solid #000000;
+    width: 70%;
+  }
+  
+  .right-panel {
+    padding: 20px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  
+  .right-panel>div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .right-panel>div>h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  .right-panel>div>button {
+    outline: none;
+    border: none;
+    background: none;
+  }
+  
+  .right-panel>div>button>svg {
+    width: 15px;
+    height: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .forecast-item {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  /* Optional: Add some styling for the date and temperature */
+  .date {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .temperature {
+    font-weight: bold;
+  }
+  
+  /* Optional: Add some styling for the weather description */
+  .weather-description {
+    color: #666;
+  }
+  
+  .main_weather {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .info>p {
+    font-size: 12px;
+    color: black;
+  }
+  
+  .date_weathers {
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .date_weathers>ul {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .forecast-item {
+    text-align: center;
+  }
+  
+  .forecast-item>div {
+    font-weight: 400;
+  }
+  
+  .svg {
+    width: 40px;
+    height: 40 px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .svg>img {
+    width: 100%;
+  }

@@ -1,20 +1,29 @@
 @import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 
+// colors
+$primary-Blue: #4037ed;
+$primary-Red: #ad1318;
+$primary-Grey: #727678;
 
-$primary-color: #3498db;
-$secondary-color: #abadb7;
- 
-$primary-text-color: #1b2a35;
-$secondary-text-color: #abadb7;
 $backgroundColor: #d8d8db;
-.textDark{
-   color: $primary-text-color; 
+
+.primaryBlue {
+    color: $primary-Blue;
 }
 
-.textLight{
-    color: $secondary-text-color;
+.primaryRed {
+    color: $primary-Red;
 }
 
-.bgGrey{
-    background-color: $backgroundColor;
+.primaryGrey {
+    color: $primary-Grey;
+}
+
+.bgBlue {
+    background-color: $primary-Blue;
+}
+
+.bgGrey {
+    background-color: $primary-Grey;
 }
