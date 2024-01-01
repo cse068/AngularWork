@@ -1,0 +1,44 @@
+ /* app.component.css */
+
+.custom-input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #aaa2a2; /* Light border at the bottom */
+    outline: none; /* Remove default outline on focus */
+  
+    /* Transition for smooth animation */
+    transition: border-bottom-color 0.3s ease-in-out;
+  }
+  
+  .custom-input:focus {
+    border-bottom: 2px solid #1b1c1c; /* dark border at the bottom on focus */
+     
+  }
+
+  .icon{
+    height: 299px;
+  }
+  .syn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Adjust the size as needed */
+  }
+  
+  .rotate-icon {
+    transition: transform 02s ease-in-out;
+    transform: rotate(180deg);
+  }
+  .svg>img {
+    width: 100%;
+  }
+
+  .date_weathers>ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .horizontal-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
