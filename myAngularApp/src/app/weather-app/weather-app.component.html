@@ -17,20 +17,19 @@
                 <h5>City not found</h5>
             </div>
             <div>
-                <h6 class="text-secondary mt-5">Recent seaches</h6>
+                <h6  *ngIf="recentSearches.length>0" class="text-secondary mt-5">Recent seaches</h6>
                 <div>
                     <div *ngFor="let search of recentSearches;let i = index">
                         <!-- <p class="row-1 d-flex  custom-input card  shadow-lg ">{{ search }}<i class="icon bi bi-plus-lg bi-5x primaryGrey"></i></p> -->
                         <div class="row">
                             <div class="col">
                                 <!-- Your text goes here -->
-                                <p>{{search}}-{{weatherData.main.temp -273.15 | number: '1.1-1' }}<span>&#176;</span>C
-                                    {{weatherData.weather[0].description}}</p>
+                                <p>{{search}}</p>
                             </div>
                             <div class="col text-right ">
                                 <!-- Bootstrap icons (adjust the icon classes accordingly) -->
                                 <span class="mr-2">
-                                    <button class="bg-transparent border-0" [ngClass]="{'rotate-icon': isRotated}"> <i
+                                    <button class="bg-transparent border-0"> <i
                                             class="bi bi-arrow-repeat" (click)="syncSeaches(search)"></i></button>
                                 </span>
                                 <!-- <i class="bi bi-icon2"></i> -->
@@ -63,7 +62,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img Src="./../../assets/weather-icons/weather.svg" width="300" height="150" priority>
+                        <img [src]="getWeatherIconPath(weatherData.weather[0].description)" width="500" height="250" priority>
                     </div>
                     <div class="col mt-5">
                         <h6>Temprature :{{weatherData.main.temp -273.15 | number: '1.1-1' }}<span>&#176;</span>C</h6>
@@ -81,8 +80,8 @@
                         <div *ngIf="i % 8 === 0">
                             <div class="date  col-md-1">{{ getDayOfWeek(day.dt_txt) }}</div>
 
-                            <img [src]="getWeatherIconPath(day.weather[0].description) " alt="Weather Icon" width="40px"
-                                height="60px">
+                            <img [src]="getWeatherIconPath(day.weather[0].description) " alt="Weather Icon" width="50"
+                                height="70">
 
                             <div class="temperature">{{ formatTemperature(day.main.temp) }}°C</div>
                         </div>

@@ -108,11 +108,9 @@ export class WeatherAppComponent implements OnInit {
 
   getWeatherIconPath(weatherCondition: string | undefined): any {
     if (!weatherCondition) {
-      return ''; // Or provide a default icon path if desired
-    }
+      return  '../../assets/icons/animated/cloudy-night-3.svg'; }
     const foundIcon = this.weatherIcons.find(icon => icon.condition.toLowerCase() === weatherCondition.toLowerCase());
-
-    return foundIcon ? foundIcon.iconPath : '';
+    return foundIcon ? foundIcon.iconPath : '../../assets/icons/animated/cloudy-night-3.svg';
     }
 formatTemperature(temp: number): string {
   // Convert temperature to Celsius and round to two decimal places
