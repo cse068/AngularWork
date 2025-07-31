@@ -1,0 +1,24 @@
+<table>
+    <thead>
+      <tr>
+        @for (header of headers; track header) {
+          <th>{{ header }}</th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for (user of users; track user.id; let i = $index) {
+        <tr (click)="onTableRowClick($event, user)">
+          @for (key of headers; track key) {
+            <td>
+              <input
+                [value]="user[key]"
+                (input)="setUserValue($event, i, key)"
+              />
+            </td>
+          }
+        </tr>
+      }
+    </tbody>
+  </table>
+  

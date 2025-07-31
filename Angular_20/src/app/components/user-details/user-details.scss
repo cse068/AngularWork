@@ -1,0 +1,21 @@
+h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #207a3c;
+}
+
+.user-detail {
+  margin-bottom: 0.75rem;
+  font-size: 15px;
+  line-height: 1.5;
+  background: #e6f4ea;
+  border-left: 4px solid #34a853;
+  padding: 0.5rem 1rem;
+
+  strong {
+    display: inline-block;
+    width: 100px;
+    font-weight: 600;
+    color: #207a3c;
+  }
+}

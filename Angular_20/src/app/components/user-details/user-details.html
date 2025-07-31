@@ -1,0 +1,11 @@
+@if (user; as u) {
+    <h2>User Details</h2>
+    @for (detail of u | keyvalue; track detail.key) {
+      <div class="user-detail">
+        <strong>{{ detail.key }}:</strong> {{ detail.value }}
+      </div>
+    }
+  } @else {
+    <p>Fetching data..</p>
+  }
+  
